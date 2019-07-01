@@ -1,6 +1,6 @@
-package com.github.leondevlifelog.calladapter;
+package com.github.leondevlifelog.calladapter.network.base;
 
-class ResultWrapper<T> extends StatusResult {
+public class ResultWrapper<T> extends StatusResult {
     private T result;
 
     public T getResult() {
@@ -10,5 +10,4 @@ class ResultWrapper<T> extends StatusResult {
     public void setResult(T result) {
         this.result = result;
     }
-
 }

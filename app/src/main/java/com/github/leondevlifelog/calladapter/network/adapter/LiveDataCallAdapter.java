@@ -1,4 +1,4 @@
-package com.github.leondevlifelog.calladapter;
+package com.github.leondevlifelog.calladapter.network.adapter;
 
 import androidx.lifecycle.LiveData;
 

@@ -1,4 +1,4 @@
-package com.github.leondevlifelog.calladapter;
+package com.github.leondevlifelog.calladapter.network.base;
 
 public class StatusResult {
     private int code;

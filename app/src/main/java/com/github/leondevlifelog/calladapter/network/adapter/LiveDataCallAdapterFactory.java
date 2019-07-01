@@ -1,6 +1,8 @@
-package com.github.leondevlifelog.calladapter;
+package com.github.leondevlifelog.calladapter.network.adapter;
 
 import androidx.lifecycle.LiveData;
+
+import com.github.leondevlifelog.calladapter.network.base.ResultWrapper;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.ParameterizedType;
@@ -15,9 +17,6 @@ public class LiveDataCallAdapterFactory extends CallAdapter.Factory {
         if (getRawType(returnType) != LiveData.class) {
             return null;
         }
-        //ListData<***>
-
-        // ResultWrapper
         Type observableType = getParameterUpperBound(0, ((ParameterizedType) returnType));
         Class<?> rawObservableType = getRawType(observableType);
         if (rawObservableType != ResultWrapper.class) {
